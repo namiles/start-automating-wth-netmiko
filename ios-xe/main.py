@@ -10,6 +10,7 @@ def main():
         "username": "developer",
         "password": "C1sco12345",
         "port": 22,
+        "session_log": "iosxe_log.log"
     }
 
     # Establish SSH connect, passing in the device dictionary
