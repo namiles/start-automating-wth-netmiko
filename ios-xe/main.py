@@ -12,10 +12,10 @@ def main():
         "port": 22,
     }
 
-    # Establish SSH connect, passing in the device disctionary
+    # Establish SSH connect, passing in the device dictionary
     net_connect = ConnectHandler(**ios_xe)
 
-    # Run "show ip int brief" command and print it's output
+    # Run "show ip int brief" command and print the output
     output = net_connect.send_command("show ip int brief")
     print(output)
 
