@@ -19,6 +19,9 @@ def main():
     output = net_connect.send_command("show ip int brief")
     print(output)
 
+    # Disconnect from SSH Session
+    net_connect.disconnect()
+
 
 if __name__ == "__main__":
     main()
